@@ -3,7 +3,7 @@
   "runtime": "org.gnome.Platform",
   "runtime-version": "49",
   "sdk": "org.gnome.Sdk",
-  "command": "glyph",
+  "command": "lipi",
   "finish-args": [
     "--share=ipc",
     "--socket=fallback-x11",
@@ -67,31 +67,30 @@
       ]
     },
     {
-      "name": "glyph-fonts_data",
+      "name": "lipi-fonts_data",
       "buildsystem": "simple",
       "build-commands": [
-        "mkdir -p ${FLATPAK_DEST}/share/glyph/",
-        "gzip -d previews.ttc.gz",
-        "cp -r fonts.json previews.ttc ${FLATPAK_DEST}/share/glyph/"
+        "mkdir -p ${FLATPAK_DEST}/share/io.github.shonebinu.Glyph/",
+        "cp -r fonts.json previews ${FLATPAK_DEST}/share/io.github.shonebinu.Glyph/"
       ],
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/shonebinu/Glyph.git",
-          "commit": "9c5926e512f578dd9d3660cdfa9dc9e91c5a7348"
+          "url": "https://github.com/shonebinu/Lipi.git",
+          "commit": "62fcf8296303a4a18cdca0cd58f3a846326b71ca"
         }
       ]
     },
     {
-      "name": "glyph",
+      "name": "lipi",
       "builddir": true,
       "buildsystem": "meson",
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/shonebinu/Glyph.git",
-          "tag": "v0.1.0",
-          "commit": "0083ff8b5a270deabe8a0d0b57aa3bd5c7cf7045"
+          "url": "https://github.com/shonebinu/Lipi.git",
+          "tag": "v0.2.0",
+          "commit": "6fe17bebd593bcc07d42942077df29a3957f7e9d"
         }
       ]
     }
