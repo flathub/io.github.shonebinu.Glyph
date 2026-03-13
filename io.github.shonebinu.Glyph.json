@@ -89,8 +89,8 @@
         {
           "type": "git",
           "url": "https://github.com/shonebinu/Lipi.git",
-          "tag": "v0.2.0",
-          "commit": "6fe17bebd593bcc07d42942077df29a3957f7e9d"
+          "tag": "v0.3.0",
+          "commit": "926e2a2012ced7bdec76e8a177383c6cfe33e34a"
         }
       ]
     }
